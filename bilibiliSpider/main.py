@@ -1,5 +1,6 @@
 #  _*_ coding: utf-8 _*_
 '''
+地址 : https://github.com/qq843399535/bilibiliSpider
 时间 : 2019/08/6--21:53
 作者 : 'dwb'
 '''
@@ -33,9 +34,11 @@ class testAss:
 
 
 if __name__ == '__main__':
-    test = testAss('62119074')
+    # av号
+    av = '62119074'
+    test = testAss(av)
     #从coookie中获取SESSDATA，为空只能下载360p
     SESSDATA = ''
-    bilibili_video_download_v2.run(test.av,SESSDATA)
+    bilibili_video_download_v2.run(av,SESSDATA)
     print("******************************B站弹幕下载******************************")
     test.get_ass()
